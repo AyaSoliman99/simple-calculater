@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(27, 24, 9, 0.76);
+  font-family: 'Roboto', sans-serif;
+}
+ul {
+  list-style: none;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc {
+  width: 400px;
+  padding: 10px;
+  padding-top: 20px;
+  height: 450px;
+  border: 3px solid blanchedalmond;
+  border-radius: 10px;
+}
+.show-result {
+  /* width: 98%; */
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 50px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+}
+.uls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  width: 100%;
+}
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.opretors,
+.equal {
+  width: 18%;
+}
+.numbers li,
+.opretor,
+.equal {
+  width: 31%;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.numbers li button,
+.opretor,
+.equal {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.opretor,
+.equal {
+  height: 45px;
+  font-size: 24px;
+}
+.opretor,
+.equal {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

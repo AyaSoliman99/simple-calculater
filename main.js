@@ -118,15 +118,16 @@ let subtraction = function (input1, input2) {
 let equalSign = document.querySelector(".equal");
 
 equalSign.addEventListener("click", function () {
-    let sign = showResultDiv.innerHTML.match(reg)[0];
-    console.log(sign);
+    let sign = showResultDiv.innerHTML.match(reg);
+
     if (sign == null) {
         return;
     } else {
         let numbersArray = showResultDiv.innerHTML.split(sign);
-
+        // check if the user not entered the two numbers
         if (numbersArray.includes("")) return;
-        switch (sign) {
+
+        switch (sign[0]) {
             case "+":
                 showResultDiv.innerHTML = summation(numbersArray[0], numbersArray[1]);
                 break;
